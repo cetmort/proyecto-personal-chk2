@@ -1,0 +1,41 @@
+<app-nav></app-nav>
+<div class="playConteiner">
+    <div class="container">
+    <div class="row fila">
+    <div class="col-6 colum">
+        <h3 style="margin-left: 15%">Player One</h3>
+        <input type="text" [(ngModel)]="namePokemon" >
+        <button class="btn btn-success" (click)="playerOne()">Pokemon: </button>
+        <div *ngIf="flags[0]" class="card">
+            <img src="{{image}}">
+            <p>name: {{namePokemon}}</p>
+            <button (click)="attack()">attack</button>
+            <div class="cover">
+                <div class="energy" #energy></div>
+            </div> 
+            <p>Live: {{liveOne}}</p>
+            <p class="resultadoOne">{{MENSAJE}}</p>
+        </div>
+    </div>
+    
+    <div class="col-6 colum">
+        <h4 style="margin-left: 15%">Player Two</h4>
+        <input type="text" [(ngModel)]="namePokemonTwo" >
+        <button class="btn btn-warning" (click)="playerTwo()">Pokemon: </button>
+        <div *ngIf="flags[1]" class="card">
+            <img src="{{imageTwo}}">
+            <p>name: {{namePokemonTwo}}</p>
+            <button (click)="attackTwo()">attack</button>
+            <div class="cover">
+                <div class="energyOne" #energyOne></div>
+            </div>  
+            <p>Live: {{liveTwo}}</p> 
+            <p class="resultadoTwo">{{MENSAJE2}}</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+

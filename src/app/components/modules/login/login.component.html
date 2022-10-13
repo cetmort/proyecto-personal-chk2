@@ -1,0 +1,31 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-9 col-lg-12 col-xl-5 titulo">
+            <p>Pokemon API</p>
+        </div>
+      </div>
+      <div class="row  justify-content-center align-items-center">
+        <div class="col-md-9 col-lg-6 col-xl-5 loginImage">
+          <img src="../../../assets/loginImage.jpg" class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form >
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3" style="color:white">Username: </label> 
+              <input type="text" name="username" [(ngModel)]="username" class="form-control form-control-lg" required="Usuario Requerido"/>
+            </div>
+  
+            <div class="form-outline mb-3">
+              <label class="form-label" for="form3Example4" style="color:white">Password: </label>
+              <input type="password" name="password" [(ngModel)]="password" class="form-control form-control-lg" required="Password Requerido"/>
+            </div>
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-danger btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="onClick()">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,60 @@
+.playConteiner{
+    position: fixed;
+    background-image: url("../../../../../assets/battleOne.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.fila{
+    height: 88%;
+}
+.colum{
+}
+input{
+    text-align: center;
+}
+.card{
+    width: 230px;
+    height: 390px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 5%;
+    color: aliceblue;
+    background-color: rgba(5, 4, 47, 0.8);
+    box-shadow: 5px 5px 10px rgb(76, 3, 91);
+    text-align: center;
+}
+
+.cover{
+    width: 100%;
+    height: 15px;
+    margin-top: 5%;
+    background: gray;
+    min-height: 50px;
+}
+.energy{
+    width: 100%;
+    height: 15px;
+    background: aquamarine;
+    min-height: 50px;
+}
+
+.energyOne{
+    width: 100%;
+    height: 15px;
+    background: rgb(9, 201, 41);
+    min-height: 50px;
+}
+
+.resultadoOne{
+    color: aquamarine;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px rgb(255, 5, 5);
+}
+.resultadoTwo{
+    color: rgb(48, 10, 187);
+    font-size: 50px;
+    text-shadow: 5px 5px 10px rgb(255, 5, 5);
+}

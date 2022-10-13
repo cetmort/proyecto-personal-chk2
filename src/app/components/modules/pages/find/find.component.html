@@ -1,0 +1,27 @@
+<app-nav></app-nav>
+<div class="fondo">
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <div class="wrapper">
+            <div class="typing-demo">
+              <h2>Encuentra A Tu Pokemon</h2>
+            </div>
+        </div>
+        <input class="input-group inputName" type="text" [(ngModel)]="namePokemon" placeholder="Ejem: pikachu">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-5"></div>
+    <div class="col-6">       
+        <button class="btn btn-primary" style="margin-bottom: 2%; margin-top: 1%; margin-left: 10%;" (click)="find()">Buscar: </button>
+        <div *ngIf="flag" class="card" >
+            <img src="{{image}}" class="card-img-top imgPokemon">
+            <div class="card-body">
+                <h5 class="card-title">nombre: {{namePokemon}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
