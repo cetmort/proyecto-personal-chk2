@@ -38,11 +38,11 @@
           "configurations": {
             "production": {
               "buildOptimizer": true,
-              "optimization": false,
+              "optimization": true,
               "vendorChunk": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true,
+              "sourceMap": false,
+              "namedChunks": false,
               "budgets": [
                 {
                   "type": "initial",

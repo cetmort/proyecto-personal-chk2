@@ -4,6 +4,7 @@ import { LoginComponent } from './components/modules/login/login.component';
 import { FindComponent } from './components/modules/pages/find/find.component';
 import { PlayComponent } from './components/modules/pages/play/play.component';
 import { HomeComponent } from './components/modules/pages/home/home.component';
+import { NotFoundComponent } from './components/shared/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 

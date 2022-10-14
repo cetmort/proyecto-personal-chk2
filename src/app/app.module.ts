@@ -12,6 +12,7 @@ import { AuthInterceptor } from './libs/interceptors/auth.interceptor';
 import { ValidatorInterceptor } from './libs/interceptors/validator.interceptor';
 import { HomeComponent } from './components/modules/pages/home/home.component';
 import { NavComponent } from './components/modules/pages/nav/nav.component';
+import { NotFoundComponent } from './components/shared/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavComponent } from './components/modules/pages/nav/nav.component';
     LoginComponent,
     HomeComponent,
     NavComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
